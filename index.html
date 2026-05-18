@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Honors - Mr. Mohamed Nasser</title>
+    <!-- استدعاء خط Cairo للعربي وخط Merienda الفاخر للإنجليزي -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Merienda:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- الخلفية الفاخرة المضيئة الثابتة -->
+    <div class="luxury-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- شاشة تسجيل الدخول (حقل واحد فقط) -->
+    <div class="neon-wrapper" id="login-screen">
+        <div class="premium-glass">
+            <h1 class="main-title">انت بطل القصة</h1>
+            <h2 class="teacher-name">Mr. Mohamed Nasser</h2>
+            <p class="subtitle">اللَّهُــمَّ صـَلِّ وَسَـــلِّمْ وبارك علـى سيدنا مُحمَّد وآله ﷺ ❤️</p>
+            
+            <div class="input-group">
+                <input type="text" id="studentName" placeholder="الاسم (مثال: مصطفى أو Mostafa)" autocomplete="off">
+            </div>
+            
+            <button class="luxury-btn" onclick="openMessage()">
+                <span>من هنا تبدأ قصتك</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- شاشة عرض الرسالة الفاخرة التي تدعم النزول -->
+    <div class="neon-wrapper" id="message-screen" style="display: none;">
+        <div class="premium-glass message-glass">
+            <h2 class="message-title">✨ A Message Just For You ✨</h2>
+            
+            <div class="message-content" id="message-box">
+                <!-- سيتم حقن الرسالة هنا برمجياً -->
+            </div>
+
+            <div class="signature">With best wishes,<br><span>Mr. Mohamed Nasser</span></div>
+            
+            <button class="luxury-btn back-btn" onclick="goBack()">
+                <span>رجوع للقائمة</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
